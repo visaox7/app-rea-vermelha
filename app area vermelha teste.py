@@ -19,7 +19,7 @@ if "logado" not in st.session_state:
     st.session_state.logado = False
 
 def tela_login():
-    st.title("🔐 Login do Sistema")
+    st.title("🔐 Login do Sistema APP ARÉA VERMELHA")
 
     usuario = st.text_input("Usuário")
     senha = st.text_input("Senha", type="password")
@@ -108,4 +108,5 @@ if tag_escolhida:
 # ==============================
 if st.button("Sair"):
     st.session_state.logado = False
+
     st.rerun()
